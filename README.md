@@ -45,21 +45,6 @@ cat commands.txt | shadowclone -w 10 -silent
 ```
 
 
-Here's an example command that demonstrates how to use ShadowClone to execute a list of commands in parallel:
-
-
-Sure, here's a usage section for the "ShadowClone: Command Parallelizer" tool:
-
-## Usage
-
-The ShadowClone tool takes a list of commands to execute on standard input (stdin). Each command should be on a separate line.
-
-Here's an example command that demonstrates how to use ShadowClone to execute a list of commands in parallel:
-
-```
-cat commands.txt | shadowclone -w 10 -silent
-```
-
 In this command, `cat` reads a list of commands from a file called `commands.txt` and passes them to ShadowClone on standard input. ShadowClone runs each command in parallel with a maximum of 10 worker processes (`-w 10`). The `-silent` flag tells ShadowClone not to print the output of each command to the console.
 
 Note that each command should be a complete shell command, including any arguments or options.
