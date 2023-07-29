@@ -44,7 +44,7 @@ if __name__ == "__main__":
         "--workers",
         type=int,
         default=7,
-        help="Number of worker processes to use (default: 4)",
+        help="Number of worker processes to use (default: 7)",
     )
     parser.add_argument(
         "-silent",
