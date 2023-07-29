@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 import argparse
 import concurrent.futures
 import subprocess
