@@ -1,6 +1,6 @@
 
 
-## ShadowClone
+## ShadowClone ⚡️
 
 
 ShadowClone enables you to execute multiple commands in parallel, turning single threaded CLI utilities into blazing fast multithreaded utilities 
