@@ -56,4 +56,3 @@ Note that each command should be a complete shell command, including any argumen
 ## How it works?
 
 ShadowClone utilizes the concurrent.futures module in Python to execute multiple commands in parallel. It creates a thread pool with a configurable number of worker processes and submits each command to the thread pool as a separate task. The thread pool manages the execution of each task, and the progress bar displays the status of each task as it executes.
-```
