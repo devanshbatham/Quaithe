@@ -29,12 +29,12 @@ Suppose you have a list of domain names in a file called `domains.txt`, and you 
 Here's an example command that demonstrates how to use ShadowClone to run `subfinder` on each domain in parallel:
 
 ```sh
-xargs -I {} -a domains.txt echo "subfinder -d {} -o {}.txt" | shadowclone -w 30 -silent
+xargs -I {} -a domains.txt echo "subfinder -d {} -o {}.txt" | shadowclone -workers 30 -silent
 ```
 
 In this command, `xargs` reads each domain name from the `domains.txt` file and passes it to the `echo` command as an argument. The `echo` command then outputs a command string that runs `subfinder` on the domain and saves the output to a file with the same name as the domain.
 
-The output of `echo` is then piped to `shadowclone`, which runs each command in parallel with a maximum of 30 worker processes (`-w 30`).
+The output of `echo` is then piped to `shadowclone`, which runs each command in parallel with a maximum of 30 worker processes (`-workers 30`).
 
 By using ShadowClone to run `subfinder` on each domain in parallel, you can significantly speed up the process of finding subdomains and make better use of your system's resources.
 
@@ -45,10 +45,10 @@ The ShadowClone tool takes a list of commands to execute on standard input (stdi
 
 
 ```sh
-cat commands.txt | shadowclone -w 10 -silent
+cat commands.txt | shadowclone -workers 10 -silent
 ```
 
-In this command, `cat` reads a list of commands from a file called `commands.txt` and passes them to ShadowClone on standard input. ShadowClone runs each command in parallel with a maximum of 10 worker processes (`-w 10`). The `-silent` flag tells ShadowClone not to print the output of each command to the console.
+In this command, `cat` reads a list of commands from a file called `commands.txt` and passes them to ShadowClone on standard input. ShadowClone runs each command in parallel with a maximum of 10 worker processes (`-workers 10`). The `-silent` flag tells ShadowClone not to print the output of each command to the console.
 
 Note that each command should be a complete shell command, including any arguments or options.
 
