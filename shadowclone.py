@@ -41,7 +41,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run commands in parallel")
     parser.add_argument(
         "-w",
-        "-workers",
         type=int,
         default=7,
         help="Number of worker processes to use (default: 7)",
