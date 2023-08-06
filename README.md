@@ -12,6 +12,8 @@
 </p>
 
 
+![ShadowClone](https://github.com/devanshbatham/ShadowClone/blob/main/static/shadowclone.png?raw=true)
+
 ## Installation
 
 ```sh
