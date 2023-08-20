@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Define the install directory for the shadowclone.py script
+# Define the install directory for the quaithe.py script
 INSTALL_DIR="/usr/local/bin"
 
-# Copy the shadowclone.py script to the install directory
-sudo cp shadowclone.py "$INSTALL_DIR/shadowclone"
+# Copy the quaithe.py script to the install directory
+sudo cp quaithe.py "$INSTALL_DIR/quaithe"
 
-# Make the shadowclone.py script executable
-sudo chmod +x "$INSTALL_DIR/shadowclone"
+# Make the quaithe.py script executable
+sudo chmod +x "$INSTALL_DIR/quaithe"
 
-echo "ShadowClone: Command Parallelizer has been installed successfully!"
+echo "Quaithe: Command Parallelizer has been installed successfully!"
