@@ -12,7 +12,6 @@
 </p>
 
 
-![Quaithe](https://github.com/devanshbatham/Quaithe/blob/main/static/quaithe.png?raw=true)
 
 ## Installation
 
